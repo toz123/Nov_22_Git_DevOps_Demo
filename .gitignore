@@ -1,0 +1,7 @@
+secrets.txt
+confidential.exe
+
+*.md
+
+!README.md
+

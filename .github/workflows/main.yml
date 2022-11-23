@@ -1,0 +1,14 @@
+# What we want to call our workflow
+name: Git Actions Demo
+# The workflow / CI Server runs / triggers when there is a push to the repo
+on:[push]
+# What jobs do we want as part of our workflow
+jobs:
+  actions_demo:
+    runs-on:ubuntu-latest
+    steps:
+    - run: echo "Hello World!"
+    - run: echo 'This is a test' > data.txt
+    - run: cat data.txt
+    - run: ls -a
+    - run: echo whoami

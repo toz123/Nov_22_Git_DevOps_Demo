@@ -41,4 +41,5 @@ jobs:
     steps: 
     - run: echo $global_name
     - run: echo $name >> local_file.txt
+    - run: cat local_file.txt
     - run: echo "${{secrets.SECRET_PASSWORD}}"

@@ -11,4 +11,4 @@ jobs:
     - run: echo 'This is a test' > data.txt
     - run: cat data.txt
     - run: ls -a
-    - run: echo whoami
+    - run: echo ${{ github.actor }}

@@ -12,3 +12,11 @@ jobs:
     - run: cat data.txt
     - run: ls -a
     - run: echo ${{ github.actor }}
+
+
+  better_action:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3 # checking out and using the repo assigned to this workflow
+    - run: chmod +x script.sh # granting permission access to script
+    - run: ./script.sh # running the script

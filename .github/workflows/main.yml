@@ -1,7 +1,7 @@
 # What we want to call our workflow
 name: Git Actions Demo
 # The workflow / CI Server runs / triggers when there is a push to the repo
-on:[push]
+on: [push]
 # What jobs do we want as part of our workflow
 jobs:
   actions_demo:
